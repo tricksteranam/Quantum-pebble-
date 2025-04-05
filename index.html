@@ -6,19 +6,31 @@
     <title>Quantum Pebble Portal</title>
     <style>
         body {
-            background: radial-gradient(circle at center, #191970 40%, #0b0c30 80%, #000000);
-            background-attachment: fixed;
-            background-size: cover;
-            color: white;
-            text-align: center;
-            font-family: Arial, sans-serif;
-            padding: 40px;
-            margin: 0;
-            display: flex;
-            flex-direction: column;
-            justify-content: center;
-            min-height: 100vh;
-        }
+    background: linear-gradient(-45deg, #191970, #0b0c30, #2c1a47, #000000);
+    background-size: 400% 400%;
+    animation: gradientFlow 15s ease infinite;
+    color: white;
+    text-align: center;
+    font-family: Arial, sans-serif;
+    padding: 40px;
+    margin: 0;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    min-height: 100vh;
+}
+
+@keyframes gradientFlow {
+    0% {
+        background-position: 0% 50%;
+    }
+    50% {
+        background-position: 100% 50%;
+    }
+    100% {
+        background-position: 0% 50%;
+    }
+}  
         .symbol {
             margin-top: 30px;
             cursor: pointer;
