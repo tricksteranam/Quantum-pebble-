@@ -81,7 +81,95 @@ in the same way that a wave is something the whole ocean is doing.</p>
 <p>If you want to progress,<br>
 follow what is in plain sight.</p>
 
-        <div class="symbol" onclick="window.location.href='https://example.com';">
+        <div class="symbol" onclick="window.location.<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+    <title>Quantum Pebble Portal</title>
+    <link href="https://fonts.googleapis.com/css2?family=EB+Garamond&display=swap" rel="stylesheet">
+    <style>
+        body {
+            background:
+                linear-gradient(to bottom, rgba(0, 0, 0, 0) 60%, rgba(200, 150, 255, 0.3) 100%),
+                linear-gradient(-45deg, #191970, #0b0c30, #2c1a47, #000000);
+            background-size: 400% 400%;
+            animation: gradientFlow 15s ease infinite;
+            color: white;
+            text-align: center;
+            font-family: 'EB Garamond', serif;
+            padding: 00px 40px 40px;
+            margin: 0;
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            align-items: center;
+            min-height: 100vh;
+        }
+
+        @keyframes gradientFlow {
+            0% {
+                background-position: 0% 50%;
+            }
+            50% {
+                background-position: 100% 50%;
+            }
+            100% {
+                background-position: 0% 50%;
+            }
+        }
+
+        .symbol {
+    margin-top: 30px;
+    cursor: pointer;
+    position: relative;
+}
+
+.symbol::before {
+    content: '';
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    width: 500px;
+    height: 500px;
+    background: radial-gradient(circle, rgba(200,150,255,0.5) 0%, rgba(200,150,255,0) 35%);
+    z-index: -1;
+    border-radius: 50%;
+}
+
+        .symbol img {
+            width: 150px;
+            height: auto;
+        }
+        .content {
+           margin-top: -40px;
+        }
+    </style>
+</head>
+<body>
+    <div class="content">
+        <p>We confuse happiness with status.<br>
+And we confuse ourselves as living organisms<br>
+which are one with this whole universe,<br>
+with something we call our personality.</p>
+
+<p>The real you is not a puppet which life pushes around.<br>
+The real deep down you is the whole universe.<br>
+You are something the whole universe is doing,<br>
+in the same way that a wave is something the whole ocean is doing.</p>
+
+<p><em>— Alan Watts</em></p>
+
+<p>If you want to progress,<br>
+follow what is in plain sight.</p>
+
+        <div class="symbol" onclick="window.location.href='https://www.patreon.com/Somethingaboutsun';">
+            <img src="symbol.png" alt="Symbol">
+        </div>
+    </div>
+</body>
+</html> ';">
             <img src="symbol.png" alt="Symbol">
         </div>
     </div>
