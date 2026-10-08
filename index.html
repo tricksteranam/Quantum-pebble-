@@ -1,102 +1,127 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="de">
 <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
-    <title>Yoga, Meditation and fire performance</title>
+    <title>Yoga & Meditation in [Ort]</title>
+    <meta name="description" content="Yoga- und Meditationskurse in [Ort]. Für alle, keine Vorkenntnisse nötig.">
     <link href="https://fonts.googleapis.com/css2?family=EB+Garamond&display=swap" rel="stylesheet">
     <style>
         body {
-    background:
-        linear-gradient(to bottom, rgba(255, 255, 255, 0) 60%, rgba(230, 200, 170, 0.4) 100%),
-        linear-gradient(-45deg, #E6B949, #edc765, #dfab36, #f0cf7a);
-    background-size: 400% 400%;
-    animation: gradientFlow 15s ease infinite;
-    color: #3b2f2a;   /* dark warm brown instead of white */
-    text-align: center;
-    font-family: 'EB Garamond', serif;
-    padding: 20px 40px 40px;
-    margin: 0;
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-    align-items: center;
-    min-height: 100vh;
-}
+            background:
+                linear-gradient(to bottom, rgba(255, 255, 255, 0) 60%, rgba(255, 240, 200, 0.35) 100%),
+                linear-gradient(-45deg, #E6B949, #edc765, #dfab36, #f0cf7a);
+            background-size: 400% 400%;
+            animation: gradientFlow 15s ease infinite;
+            color: #2e2118;
+            text-align: center;
+            font-family: 'EB Garamond', serif;
+            padding: 20px 40px 40px;
+            margin: 0;
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            align-items: center;
+            min-height: 100vh;
+        }
 
         @keyframes gradientFlow {
-            0% {
-                background-position: 0% 50%;
-            }
-            50% {
-                background-position: 100% 50%;
-            }
-            100% {
-                background-position: 0% 50%;
-            }
+            0% { background-position: 0% 50%; }
+            50% { background-position: 100% 50%; }
+            100% { background-position: 0% 50%; }
         }
+
+        .lang {
+            align-self: flex-end;
+            font-size: 1rem;
+            margin-bottom: 10px;
+        }
+
+        .lang a { color: #2e2118; text-decoration: none; }
+        .lang .active { font-weight: bold; }
+
+        .content { max-width: 480px; }
+
+        h1 { font-size: 2.6rem; margin: 0 0 8px; }
+
+        .tagline {
+            font-size: 1.4rem;
+            font-style: italic;
+            margin-bottom: 28px;
+        }
+
+        .next { font-weight: bold; margin: 24px 0; }
+
+        .button {
+            display: block;
+            padding: 14px 20px;
+            margin: 12px auto;
+            background: #2e2118;
+            color: #E6B949;
+            text-decoration: none;
+            border-radius: 30px;
+            font-size: 1.15rem;
+        }
+
+        .button.light {
+            background: transparent;
+            color: #2e2118;
+            border: 2px solid #2e2118;
+        }
+
+        .small { font-size: 0.95rem; margin-top: 28px; }
 
         .symbol {
-    margin-top: 30px;
-    cursor: pointer;
-    position: relative;
-}
-
-.symbol::before {
-    content: '';
-    position: absolute;
-    top: 50%;
-    left: 50%;
-    transform: translate(-50%, -50%);
-    width: 500px;
-    height: 500px;
-    background: radial-gradient(circle, rgba(255, 245, 210, 0.6) 0%, rgba(255, 245, 210, 0) 35%);
-    z-index: -1;
-    border-radius: 50%;
-}
-
-        .symbol img {
-            width: 150px;
-            height: auto;
+            margin-top: 30px;
+            cursor: pointer;
+            position: relative;
         }
-        .content {
-           margin-top: -40px;
+
+        .symbol::before {
+            content: '';
+            position: absolute;
+            top: 50%;
+            left: 50%;
+            transform: translate(-50%, -50%);
+            width: 500px;
+            height: 500px;
+            max-width: 100vw;
+            background: radial-gradient(circle, rgba(255, 245, 210, 0.6) 0%, rgba(255, 245, 210, 0) 35%);
+            z-index: -1;
+            border-radius: 50%;
         }
+
+        .symbol img { width: 150px; height: auto; }
     </style>
 </head>
 <body>
+    <div class="lang">
+        <span class="active">DE</span> | <a href="en.html">EN</a>
+    </div>
+
     <div class="content">
-      <p>  Welcome my friend!<br><br>
+        <h1>Yoga & Meditation</h1>
+        <p class="tagline">Komm zur Ruhe. Komm zurück in deinen Körper.</p>
 
-<h2 class="title">Yoga and Meditation teacher | fire performance</h2><br><br>
+        <p>
+            Wöchentliche Gruppenstunden in [Ort].<br>
+            Keine Vorkenntnisse nötig, alle sind willkommen.
+        </p>
 
-Hello friend!
+        <p class="next">Nächste Stunde: [Wochentag], [Uhrzeit] · [Adresse]</p>
 
-I am back in Europe! currently located in Switzerland.<br>
-After a decade traveling and meeting various people and cultures<br>
- I feel excited to share now about yoga, meditation and movement.<br><br>
+        <a class="button" href="https://wa.me/41XXXXXXXXX">Schreib mir auf WhatsApp</a>
+        <a class="button light" href="https://instagram.com/XXXXXXX">Instagram</a>
 
-We are constantly bombarded with information - News, TV, social media etc.<br>
-Yoga is a method to bring our awareness back to ourselves.<br>
-To stop the endless storytelling of the mind and be in the body - to be embodied<br>
-So that we can stay present, make conscious decisions to create our life,<br>
-and are less likely to be influenced and manipulated.<br><br>
-The goal is not to reach the next higher level of consciousness<br>
-but simply  how  can  we exist harmonious with ourselves and our surrounding.<br><br>
+        <p class="small">
+            Auch Einzelstunden möglich, auf Deutsch und Englisch.<br>
+            Herzlich, Vincent
+        </p>
 
-If you are  curious  feel free to contact me. i give currently group classes in Switzerland<br>
-and offer private  classes in German and English.<br><br>
-Much love<br>
-Vincent<br><br>           
-
-WhatsApp: +4915238483253<br>
-Instagram: iamanam_on_earth<br><br>
-
-<p>Also have a look at my Patreon page;
-</p>
         <div class="symbol" onclick="window.location.href='https://www.patreon.com/Somethingaboutsun';">
-            <img src="symbol.png" alt="Symbol">
+            <img src="symbol.png" alt="Patreon">
         </div>
+        <p class="small">Unterstütze mich auf Patreon</p>
     </div>
 </body>
-</html> 
+</html>
